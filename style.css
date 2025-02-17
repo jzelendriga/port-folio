@@ -165,6 +165,22 @@ li>a>button:hover>span:last-of-type {
     animation: borderAnimation 5s linear infinite;
 }
 
+@media (max-width: 786px){
+    .home-img {
+        text-align: center; /* Center the image */
+        overflow: hidden; /* Hide any overflow */
+    }
+    
+    .home-img img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove bottom space under image */
+        margin: 0 auto; /* Center image horizontally */
+    }
+    
+}
+
+
 @keyframes borderAnimation {
     0% {
         border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
